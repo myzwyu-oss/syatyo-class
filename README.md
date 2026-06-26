@@ -6,6 +6,7 @@
 
 ## 2. ソースコード
 
+```python
 # このプログラムは python3 用です。
 # あらかじめ pip install pillow で pillow をインストールしておきます。
 from PIL import Image
@@ -20,7 +21,7 @@ img = Image.open(input_image)
 
 # 画像の左右反転
 img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
-
+```
 # 画像の保存
 img_flip.save(output_image)
 python3 flip.py <input_image_path> <output_image_path>
@@ -28,7 +29,7 @@ python3 flip.py <input_image_path> <output_image_path>
 ## 3.使い方
 ### 3.1実行例
 ・コマンドラインフォーマット
-python3 flip.py <input_image_path> <output_image_path>python3 flip.py <input_image_path> <output_image_path>
+python3 flip.py <input_image_path> <output_image_path>
 ・利用例
 python3 flip.py input.jpg output.jpg
 
